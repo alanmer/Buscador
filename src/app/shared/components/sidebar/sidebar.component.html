@@ -1,14 +1,27 @@
 <h2>Busqueda de paises</h2>
 <ul class="list-group">
   <li
-  routerLink='home'
-  routerLinkActive="active"
-  class="list-group-item">
+    routerLink="home"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
     Home Page
   </li>
-  <li routerLink="about"
-   routerLinkActive="active"
-   class="list-group-item ">
+  <li
+    routerLink="about"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
     Abaut Page
+  </li>
+  <li
+    routerLink="contact"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    class="list-group-item"
+  >
+    Contact
   </li>
 </ul>
